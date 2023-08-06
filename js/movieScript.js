@@ -145,10 +145,7 @@ function handleButtonClick(event) {
 async function renderButtons() {
     console.log("reached render button")
     const buttonContainer = document.getElementById('buttonContainer');
-    console.log(buttonContainer);
     const folder = await axios.get('http://localhost:3000/playlistFolder');
-    console.log(folder);
-    console.log('hello');
     // Loop through the buttonIds array and create a button for each ID
     folder.data.data.forEach((val) => {
         const button = document.createElement('button');
@@ -158,11 +155,6 @@ async function renderButtons() {
         buttonContainer.appendChild(button);
     });
 }
-
-
-
-
-
 
 // event listener which gets activated on clicking search box
 window.addEventListener('click', (event) => {

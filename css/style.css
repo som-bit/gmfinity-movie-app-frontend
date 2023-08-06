@@ -7,9 +7,9 @@
 }
 
 :root{
-    --yellow: #d4aa11;
-    --black: #191919;
-    --lightblack: #212020;
+    --yellow: #007bff;
+    --black: #bdb9b9;
+    --lightblack:#606263 ;
 }
 
 body {
@@ -39,13 +39,13 @@ a {
 }
 
 #favourites:hover{
-    color: crimson;
+    color: #007bff;
 }
 
 /* Search Container */
 #search-container {
     height: 200px;
-    background-color: var(--lightblack);
+    background-color: #606263;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@ a {
     width: 518px;
     max-height: 400px;
     top: 64%;
-    background-color: #272626;
+    background-color: #606263;
     color: aliceblue;
     overflow-y: scroll;
     z-index: 1;
@@ -82,6 +82,17 @@ a {
     cursor: pointer;
     border-bottom: 2px solid black;
 }
+
+ button {
+     padding: 10px;
+     margin: 10px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+ }
 
 .search-list-item:hover {
     background-color: #1f1e1e;
@@ -162,7 +173,7 @@ a {
 }
 
 .movie-info .add-to-fav:hover{
-    color:crimson;
+    color:#007bff;
 }
 
 .movie-info .director {
@@ -171,7 +182,7 @@ a {
 }
 
 .movie-info .genre {
-    background-color: #292929;
+    background-color: #007bff;
     display: inline-block;
     padding: 0.5rem;
     border-radius: 3px;
@@ -204,14 +215,14 @@ a {
     padding: 10px;
     text-align: center;
     background-color: crimson;
-    color: #fff;
+    color: #007bff;
     border-radius: 5px;
     height: 50px;
     cursor: pointer;
 }
 
 #add-to-fav:hover{
-    background-color: gold;
+    background-color: #007bff;
 }
 
 /* Media Queries */
